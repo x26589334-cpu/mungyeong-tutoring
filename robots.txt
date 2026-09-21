@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://x26589334-cpu.github.io/mungyeong-tutoring/sitemap.xml
+Sitemap: https://nadogo.co.kr/sitemap.xml

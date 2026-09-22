@@ -12,7 +12,7 @@
 ## 도메인 / 배포
 - 도메인: **nadogo.co.kr** (가비아, 2026-09-21 연결). `CNAME` 파일 있음 · 주소 `https://nadogo.co.kr/`
 - 도메인을 바꿀 때: `사이트관리/도구/지역과외/regions.js` 의 `domain` 을 고치고 재생성 → 사이트 안 주소(sitemap·canonical·og:url·robots)와 `CNAME` 이 같이 바뀐다. GitHub Pages 설정의 Custom domain 도 맞출 것
-- **검색엔진 소유확인 태그** (`index.html`, 2026-09-22 손으로 넣음): `naver-site-verification` = `103ca78bf5b282cd5e713f58db426e38a6b8e4f8` · `google-site-verification` = `PzkNOvqYeTARMT3iDCkrw2u6mXIgX54_4pX5DYbCscs`. 생성기(`regions.js`)에는 아직 없어서 **재생성하면 사라진다** — 재생성 후 이 태그를 다시 넣거나, 생성기 head 부분에 사이트별 인증값을 추가할 것.
+- 검색엔진 소유확인: 네이버 `103ca78bf5b282cd5e713f58db426e38a6b8e4f8` · 구글 `PzkNOvqYeTARMT3iDCkrw2u6mXIgX54_4pX5DYbCscs` — 홈 `<head>` 에 생성기가 넣는다(`regions.js` 의 `verify`). **`index.html` 에 손으로 넣지 말 것** — 재생성하면 사라진다. 코드를 바꾸려면 `verify` 를 고치고 재생성.
 - GA4 측정 ID 미발급. `analytics.js` 의 `GA_ID` 가 비어 있어 지금은 아무것도 보내지 않는다. 발급하면 그 한 줄만 채우고 `사이트관리/사이트대장.md` 10절에 적는다.
 
 ## 이 사이트만의 구조
